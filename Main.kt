@@ -2,13 +2,12 @@ fun main() {
 
     var answer = "y"
 
-    while (answer == "y" || answer == "Y") {
+    while (answer.uppercase() == "Y") {
         var x: Int? = null
         var y: Int? = null
         println("შეიყვანე მნიშვნელობა.")
 
         while (x == null || y == null) {
-
             print("შეიყვანე X: ")
             val inputX = readlnOrNull()
             print("შეიყვანე Y: ")
